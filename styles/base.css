@@ -1,29 +1,32 @@
 
 body{
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     margin: 0;
     padding: 0;
 }
 h1{
     font-weight: 400;
-    color: black;
+    color: white;
+    text-align: center;
+    background-color: #495867;
+    margin-bottom: 0;
+    padding:   10px;
+    margin-top: auto;
     
 }
 header{
-    background-color: #50B2C0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    margin: 0px;
 
 }
-nav{
-    background-color: #201E1F;
+.navigation{
+    background-color: #BDD5EA;
     margin: 0 auto;
-    max-width: 100% ;
     padding: 0.2em;
     margin: 0;
+    box-shadow: 0px 3px 5px rgba(47, 87, 87, 0.5); 
+
+    
 }
 
 nav ul{
@@ -32,27 +35,26 @@ nav ul{
     margin: 0;
 }
 
-nav a{
-    color: white;
+.navigation a{
+    color: #000;
     display: block;
     text-align: center;
     text-decoration: none;
     padding: 1rem;
-    transition: color 0.3s, border 0.3s; /* Añadido: transiciones suaves para color y borde */
+    transition: color 0.3s, border 0.3s; 
 
 }
 
-.active{
-    color: #FAAA8D;
-}
-
-nav a:hover{
+.navigation a:hover{
     color: black;
     border-radius: 5px;
     font-size: 12pt;
     transition: 0.5s;
     font-weight: bolder;
-    background-color: #50B2C0;
+    background-color: #FE5F55;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5); /* Sombra en la parte inferior */
+
+
 }
 /*Minimo width */
 
@@ -81,15 +83,18 @@ main{
     border-radius: 5px;
     padding: 1rem;
     overflow: auto;
-    border: 1px solid #fff; 
+    border: 1px solid #F7F7FF; 
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: #F7F7FF;
+    font-weight: 500;
 }
 .card h3{
-    background-color: #201E1F;
+    background-color: #495867;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 0.5rem;
     text-align: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 br {
@@ -113,9 +118,13 @@ br {
     float: right;
     margin-left: 10px;
 }
+.card ul li a {
+    color: #201E1F;
+    text-decoration: none;
+}
 
 footer{
-    background-color: #201E1F;
+    background-color: #495867;
     color: white;
     padding: 1rem;
     text-align: center;
