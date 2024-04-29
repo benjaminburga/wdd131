@@ -49,18 +49,17 @@ main {
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 40px;
     justify-content: center;
-    width: 100%; /* Corrección del ancho al 100% */
+    width: 60%; 
     padding: 1rem;
     margin: 0 auto;
 }
-@media (min-width: 640px) {
-    nav ul {
-        display: flex;
-    }
-    nav ul li {
-        flex: 1 1 auto;
-    }
+nav ul {
+    display: flex;
 }
+nav ul li {
+    flex: 1 1 auto;
+}
+
 .card {
     margin: 0.3rem;
     border-radius: 5px;
