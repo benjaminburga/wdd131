@@ -2,10 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Benjamin Burga | Personal Website"> <!--Editar esta parte-->
+    <meta name="author" content="Benjamin Burga">
+    <title>WDD 131 - Dynamic Web Fundamentals - Benjamin Burga</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>HELLO WORLD</h1>
+    <header>
+    <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+    </header>
+
+    <nav>
+        <ul>
+        
+        <li><a href="https://www.linkedin.com/in/benjamin-burga">Linkedin</a></li>
+        <li><a href="https://byui.instructure.com/.">I learn</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+        <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h3 >About me </h3>
+                <div class="about">
+                <img src="images/profile_photo.png" alt="profile_photo">
+                <p>My name is Benjamin Burga, I'm from Lima, Peru, and I'm 25 years old. I'm passionate about exploring and experimenting with new technology. I'm always seeking to learn something new and exciting in the world of technology. From discovering new apps to learning to code, I'm constantly looking for ways to expand my skills and knowledge in this exciting field. I can't wait to see what exciting challenges and learning opportunities the future holds!
+                </p>
+                </div>
+            <br>
+            <h3 > Peru , Lima</h3>
+                <div class="country">
+                <img src="images/peru_flag.png" alt="peru_flag">
+                <p>Lima, the capital of Peru, is a charming blend of history and modernity. From its majestic colonial buildings to its delightful gastronomy, Lima captivates visitors at every turn. With a rich history and vibrant energy, this city offers a unique experience that seamlessly combines the old and the new. The warmth and hospitality of its people make Lima truly special. It's much more than a city; it's an enriching experience that leaves a lasting impression on all who have the privilege of visiting.
+            </div>
+        </section>
+        <section class="card">
+            <h3 class="resources">Web Dev Resources</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web">MDN Web Docs</a></li>
+                <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+                <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                <li><a href=" https://www.freecodecamp.org/">freeCodeCamp</a></li>
+                <li><a href="https://github.com/">GitHub</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Benjamin Burga | Lima - Peru  <p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

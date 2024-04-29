@@ -1,0 +1,122 @@
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-weight: 400;
+    color: black;
+    
+}
+header{
+    background-color: #50B2C0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+nav{
+    background-color: #201E1F;
+    margin: 0 auto;
+    max-width: 100% ;
+    padding: 0.2em;
+    margin: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a{
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    transition: color 0.3s, border 0.3s; /* Añadido: transiciones suaves para color y borde */
+
+}
+
+.active{
+    color: #FAAA8D;
+}
+
+nav a:hover{
+    color: black;
+    border-radius: 5px;
+    font-size: 12pt;
+    transition: 0.5s;
+    font-weight: bolder;
+    background-color: #50B2C0;
+}
+/*Minimo width */
+
+@media (min-width: 640px){
+
+nav ul{
+    display: flex;
+
+}
+nav ul li{
+    flex: 1 1 auto; /* Añadido: comportamiento flexible para los elementos li */
+}
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 40px;
+    justify-content: center;
+    width: 60%;
+    padding: 1rem;
+    margin: 0 auto;
+}
+   
+.card{
+    margin: 0.3rem;
+    border-radius: 5px;
+    padding: 1rem;
+    overflow: auto;
+    border: 1px solid #fff; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.card h3{
+    background-color: #201E1F;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+br {
+    display: block; 
+    content: "";
+    border-top: 2px solid black; 
+    margin-top: 3.5rem;
+}
+.country .about{ 
+    overflow: auto;
+}
+.country img{
+    width: 160px;
+    float: left;
+    margin-right: 10px;
+}
+
+.about img{
+    width: 160px;
+    border-radius: 2px;
+    float: right;
+    margin-left: 10px;
+}
+
+footer{
+    background-color: #201E1F;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
