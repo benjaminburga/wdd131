@@ -56,6 +56,16 @@ nav ul{
 
 
 }
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 40px;
+    justify-content: center;
+    width: 60%;
+    padding: 1rem;
+    margin: 0 auto;
+}
+   
 /*Minimo width */
 
 @media (min-width: 640px){
@@ -68,16 +78,7 @@ nav ul li{
     flex: 1 1 auto; /* Añadido: comportamiento flexible para los elementos li */
 }
 }
-main{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-column-gap: 40px;
-    justify-content: center;
-    width: 60%;
-    padding: 1rem;
-    margin: 0 auto;
-}
-   
+
 .card{
     margin: 0.3rem;
     border-radius: 5px;
