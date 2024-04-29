@@ -61,7 +61,7 @@ main{
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 40px;
     justify-content: center;
-    width: 60%;
+    width: 100%;
     padding: 1rem;
     margin: 0 auto;
 }
