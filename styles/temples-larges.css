@@ -1,0 +1,60 @@
+/* Temples-large.css */
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.navigation {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation a:hover {
+    background-color: white;
+    color: #023047;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+
+h2 {
+    text-align: center;
+}
+
+main figure {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 1rem;
+}
+
+figure img {
+    border-radius: 15px;
+}
+
+figure img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translateY(-2px) scale(1.01);
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 0.7rem;
+    color: white;
+}
