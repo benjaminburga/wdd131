@@ -1,82 +1,102 @@
 @media screen and (min-width: 768px) {
+    body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+    }
 
-body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    margin: 0;
-    padding: 0;
-}
+    h1 {
+        text-align: center;
+        color: white;
+        margin-left: 4rem;
+    }
 
-h1 {
-    text-align: center;
-    color: white;
-    margin-left: 4rem;
-}
-.nav-toggle {
-display: none;
-}
+    .nav-toggle {
+        display: none;
+    }
 
-.navigation {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .navigation {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 1rem;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 1rem;
+    }
 
-}
+    .navigation a {
+        color: white;
+        text-decoration: none;
+        padding: 1rem;
+        margin: 0.5rem;
+    }
 
-.navigation a {
-    color: white;
-    text-decoration: none;
-    padding: 1rem;
-    margin: 0.5rem;
-}
+    .navigation a:hover {
+        background-color: white;
+        color: #023047;
+        transition: 0.5s;
+        border-radius: 3px;
+    }
 
-.navigation a:hover {
-    background-color: white;
-    color: #023047;
-    transition: 0.5s;
-    border-radius: 3px;
-}
+    h2 {
+        text-align: center;
+        padding: 1rem;
+        text-align: center;
+        background-color: black;
+        opacity: 0.8;
+        color: white;
+    }
 
-h2 {
-    text-align: center;
-    padding: 1rem;
-    text-align: center;
-    background-color: black;
-    opacity: 0.8;
-    color: white;
-}
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr)); 
+        gap: 10px;
+        padding: 1rem;
+    }
 
-main figure {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); 
-    gap: 10px;
-    padding: 1rem;
-}
+    main figure {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 1rem;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    figure img {
+        border-radius: 5px;
+    }
+
+    figure img:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        transition: 0.5s;
+        transform: translateY(-2px) scale(1.01);
+    }
+    figcaption {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        font-size: 0.9em;
+        color: #bbb;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
 
 
-figure img {
-    border-radius: 5px;
-}
-
-figure img:hover {
-    opacity: 0.8;
-    cursor: pointer;
-    transition: 0.5s;
-    transform: translateY(-2px) scale(1.01);
-}
-
-footer {
-    background-color: black;
-    text-align: center;
-    padding: 0.7rem;
-    color: white;
-}
+    footer {
+        background-color: black;
+        text-align: center;
+        padding: 0.7rem;
+        color: white;
+    }
 }
