@@ -10,12 +10,19 @@
         padding: 0;
     }
 .nav-toggle {
-    display: block;
+    display: flow-root;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: black;
+    background-color: white;
     font-size: 1.5rem;
+    position: absolute;
+    z-index: 1;
+    top: 12%;
+    margin: 0.3rem;
+}
+nav{
+    position: relative;
 }
 
 nav ul {
@@ -54,9 +61,12 @@ nav ul.active {
 
 nav ul li {
     margin-bottom: 10px;
+    padding: 7px;
 }
 nav ul li:hover{
     background-color: white;    
+    transition: 0.5s;
+    border-radius: 5px;
 }
 a:hover{
     color: black;
