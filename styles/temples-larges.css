@@ -53,7 +53,7 @@
         color: white;
     }
 
-    main {
+    .album {
         display: grid;
         grid-template-columns: repeat(3, minmax(200px, 1fr)); 
         gap: 10px;
@@ -80,18 +80,6 @@
         transition: 0.5s;
         transform: translateY(-2px) scale(1.01);
     }
-    figcaption {
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        font-size: 0.9em;
-        color: #bbb;
-        padding: 10px;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
-
 
     footer {
         background-color: black;
