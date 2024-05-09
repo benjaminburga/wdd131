@@ -1,59 +1,76 @@
 /* Temples.css */
+
 /* Styles for smaller screens */
-@media screen and (max-width: 768px) {
-    .nav-toggle {
-        display: block;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        color: black;
-        font-size: 1.5rem;
-    }
 
-    nav ul {
-        display: none; 
+@media screen and (max-width: 768px) { 
+    body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
     }
-    h1{
-        text-align: center;
-        background-color: black;
-        color: white;
-        padding: 0.5rem;
-    }
-    a{
-        color: white;
-        text-decoration: none;        
-    }
-    nav ul li{
-        list-style-type: none;
-    }
-    h2{
-        text-align: center;
-        background-color: black;
-        opacity: 0.8;
-        color: white;
-    }
+.nav-toggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 1.5rem;
+}
 
-    nav ul.active {
-        display: flex;
-        flex-direction: column;
-        background-color: black;
-        padding: 10px;
-        text-align: center;
-    }
+nav ul {
+    display: none; 
+}
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    margin: 0px;
+}
+a {
+    color: white;
+    text-decoration: none;        
+}
+nav ul li {
+    list-style-type: none;
+}
+h2 {
+    text-align: center;
+    padding: 1rem;
+    text-align: center;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+}
 
-    nav ul li {
-        margin-bottom: 10px;
-    }
-    figure img:hover {
-        opacity: 0.8;
-        cursor: pointer;
-        transition: 0.5s;
-        transform: translateY(-2px) scale(1.01);
-    }
-    footer{
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding: 0.5rem;
-    }
+nav ul.active {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+nav ul li:hover{
+    background-color: white;    
+}
+a:hover{
+    color: black;
+}
+figure img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translateY(-2px) scale(1.01);
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
 }

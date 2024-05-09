@@ -1,4 +1,6 @@
 /* Temples-large.css */
+@media screen and (min-width: 768px) {
+
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 600;
@@ -9,6 +11,10 @@ body {
 h1 {
     text-align: center;
     color: white;
+    margin-left: 4rem;
+}
+.nav-toggle {
+display: none;
 }
 
 .navigation {
@@ -21,6 +27,16 @@ h1 {
 ul {
     display: flex;
     justify-content: space-around;
+    list-style-type: none;
+    margin: 1rem;
+
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0.5rem;
 }
 
 .navigation a:hover {
@@ -32,17 +48,23 @@ ul {
 
 h2 {
     text-align: center;
+    padding: 1rem;
+    text-align: center;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
 }
 
 main figure {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Ajusta el valor máximo a 150px */
     gap: 10px;
     padding: 1rem;
 }
 
+
 figure img {
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 figure img:hover {
@@ -57,4 +79,5 @@ footer {
     text-align: center;
     padding: 0.7rem;
     color: white;
+}
 }
