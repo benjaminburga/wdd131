@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Benjamin Burga">
+    <meta name="description" content="place.html">
+    <title>PLACE</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place.larges.css">
+    <script src="scripts/place.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+    <h1>Peru</h1>
+    </header>
+    <main>
+        <picture class="hero">
+                <source media="(min-width: 992px )" srcset="images/Peru-large.webp">
+                <source media="(min-width: 768px )" srcset="images/Peru-medium.webp">
+                <img src="images/Peru-small.webp" alt="Peru - Lima" width="767">
+            </picture>
+    <section class="data">
+        <h2>Data</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="title">Area: </td>
+                    <td>1,285,216 sq km</td>
+                    <td class="title">Population: </td>
+                    <td>33,359,418 </td>
+                    <td class="title">Capital:</td>
+                    <td>Lima</td>
+                    <td class="title">Languages: </td>
+                    <td>Spanish,Quechua,Aymara</td>
+                    <td class="title">Currency: </td>
+                    <td> Nuevo Sol (PEN)</td>
+                    <td class="title">Time Zone: </td>
+                    <td>UTC-5 </td>
+                    <td class="title">Calling code: </td>
+                    <td> +51</td>
+                    <td class="title">Internet TLD: </td>
+                    <td>.pe</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="weather">
+        <h2>Weather</h2> 
+        <picture> 
+        <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="Cloud_svg_img">
+        </picture>  
+        <table>
+            <tbody>
+                <tr>
+                    <td class="title"> Temperature: </td>
+                    <td id="Temperature"></td>
+                    <td class="title">Conditions: </td>
+                    <td id="Conditions"></td>
+                    <td class="title">Wind: </td>
+                    <td id="Wind"></td>
+                    <td class="title">Wind chill: </td>
+                    <td id="windchill"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    </main>
+
+    <footer>
+    <p>©<span id="currentyear"></span> Benjamin Burga | Lima - Peru </p>
+    <p id="last_modification"></p>
+    </footer>
+    
+</body>
+</html>
