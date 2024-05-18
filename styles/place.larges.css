@@ -1,0 +1,21 @@
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .data, .weather {
+        margin-bottom: 5rem;
+    }
+
+    .data tr, .weather tr {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    h1{
+        font-size: 40pt;
+    }
+    h2{
+        font-size: 30pt;
+    }
+    .hero img {
+        width: 100%; 
+        height: auto; 
+    }
+}
