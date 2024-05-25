@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+    .temple-card {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .temple-card {
+        width: calc(100% - 2rem);
+    }
+}
+
+.navigation {
+    background-color:#333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+li a:hover{
+    color: #333;
+    background-color: white;
+
+}
+li{
+    margin: 15px;
+}
+
+h2{
+    text-align: center;
+    background-color: #ddd;
+    margin: 0px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Benjamin Burga">
+    <meta name="description" content="Filtered Temples Album">
+    <title>Temples Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-larges.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+
+    <!-- Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navigation">
+        <h1>Temples Albums</h1>
+        <button class="nav-toggle">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="#" id="filter-home">Home</a></li>
+                <li><a href="#" id="filter-old">Old</a></li>
+                <li><a href="#" id="filter-new">New</a></li>
+                <li><a href="#" id="filter-large">Large</a></li>
+                <li><a href="#" id="filter-small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>HOME</h2>
+        <div id="temple-container" class="album">
+            <!-- Dynamic temple cards will be inserted here by JavaScript -->
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Benjamin Burga | Lima - Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
