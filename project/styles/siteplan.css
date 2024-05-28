@@ -37,7 +37,7 @@ a{
 .picture{
     width: 120vw;
 }
-.site_name{
+.sitename{
     display: flex;
     justify-content: center;
     background-color: var(--secondarycolor);
@@ -46,12 +46,12 @@ a{
     padding: 1rem;
     margin: 2rem;
 }
-.site_purpose {
+.sitepurpose {
     padding: 1rem;
     margin: 2rem;
 
 }
-.site_purpose .cards{
+.sitepurpose .cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     gap: 8rem;
