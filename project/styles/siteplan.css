@@ -1,3 +1,6 @@
+*{
+    margin: 0px;
+}
 body{
     font-family: "Lato", sans-serif;
     font-weight: 300;
@@ -30,4 +33,63 @@ nav ul{
 a{
     text-decoration: none;
     color: var(--thirdcolor);
+}
+.picture{
+    width: 120vw;
+}
+.site_name{
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondarycolor);
+    width: 50vw;
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+}
+.site_purpose {
+    padding: 1rem;
+    margin: 2rem;
+
+}
+.site_purpose .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 8rem;
+    margin: 2rem;
+}
+.card{
+    background-color: var(--footercolor);
+    padding: 1.3rem;
+    border-radius: 1rem;
+    width: 200px;
+    height: 150px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card h3{
+    padding: 1rem;
+}
+.card:hover{
+    cursor: pointer;
+    transform: translateY(5px);
+    transition: 0.3s;
+    background-color: black;
+    color: white;
+
+
+}
+
+.scenarios{
+    padding: 1rem;
+    margin: 2rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-weight: 400;
+    margin-top: 1rem;
 }
