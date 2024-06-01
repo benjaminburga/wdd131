@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Benjamin Burga "> 
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<header>
+    <h1>PRODUCT REVIEW</h1>
+</header>
+<body>
+    <main>
+        <form action="">
+        <div class="product">
+        <h3>Producte name</h3>
+        <label for="product-name" ></label>
+        <select name="product-name" id="product-name" >
+            <option value="" disbabled selected>Select a product</option>
+            <option value="1">Coca Cola</option>
+            <option value="1">Bread</option>
+            <option value="1">Milk</option>
+            <option value="1">Rice</option>
+        </select>
+        </div>
+        <div class="rate">
+            <h3>Overall Rating</h3>
+            <label for="rating">✩</label>
+            <input type="radio" name="star" id="star1" value="1">
+            <label for="rating">✩✩</label>
+            <input type="radio" name="star" id="star2" value="2">
+            <label for="rating">✩✩✩</label>
+            <input type="radio" name="star" id="star3" value="3">
+            <label for="rating">✩✩✩✩</label>
+            <input type="radio" name="star" id="star4" value="4">
+            <label for="rating">✩✩✩✩✩</label>
+            <input type="radio" name="star" id="star5" value="5">
+        </div>
+        <div class="date-of-installation">
+            <h3>Date of Installation</h3>
+            <input type="date">
+        </div>
+        <div class="survey">
+            <h3>Wich features did you find useful in the product</h3>
+            <p>(Check all that apply)</p>
+                <div class="survey-options">
+                    <input type="checkbox" name="durability" id="durability">
+                    <label for="durability">Durability</label>
+                    <input type="checkbox" name="use" id="use">
+                    <label for="use">Ease of Use</label>
+                    <input type="checkbox" name="performance" id="performance">
+                    <label for="performance">Performance</label>
+                    <input type="checkbox" name="design" id="design">
+                    <label for="design">Design</label>
+                </div>
+        </div>
+
+        <div class="review">
+            <h3>Write a review <span>(optional)</span></h3>
+            <textarea name="review" id="review" cols="60" rows="7"></textarea>
+        </div>
+        <div class="fullname">
+            <h3>Your name(Optional)</h3>
+            <textarea name="review2 " id="review2" cols="60" rows="2"></textarea>
+        </div>
+        <button class="submit" id="submit">Post Review</button>
+    </form>
+    </main>
+</body>
+
+<footer>
+    <p>©Benjamin Burga <span id="lastmodified"></span> | <span id="currentyear"></span> </p>
+</footer>
+    
+</html>

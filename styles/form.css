@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+
+}
+main {
+    font-family: "Open Sans", sans-serif;
+    display: grid;
+    justify-content: center;
+
+}
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-family: "Open Sans", sans-serif;
+}
+footer{
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+input{
+    padding: 0.3rem;
+
+}
+form input , form select{
+    padding: 0.3rem;
+}
+.product{
+    margin: 1rem;
+}
+.rate{
+    margin: 1rem;
+    
+}
+.rate input{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.date-of-installation{
+    margin: 1rem;
+}
+.survey{
+    margin: 1rem;
+}
+.survey-options{
+    display: grid ;
+    grid-template-columns: 1fr ;
+}
+form{
+    margin: 1rem;
+    padding: 1rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.submit{
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    border: 0.5px solid black;
+}
+textarea{
+    border-radius: 10px;
+}
