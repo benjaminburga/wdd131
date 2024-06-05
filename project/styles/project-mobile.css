@@ -17,7 +17,6 @@
     }
 
     nav ul {
-        display: none;
         flex-direction: column;
         width: 100%;
         background-color: var(--footer-color);
@@ -55,14 +54,17 @@
         width: 100%; /* Ajustar el ancho de la imagen en mobile */
         height: 85vh; /* Ajustar altura de la imagen en mobile */
     }
+
     .hero .text h2 {
         font-size: 40pt; /* Reducir tamaño del texto */
         max-width: 100%; /* Asegurarse de que el texto no se salga del contenedor */
-        white-space: inherit; /* Permitir que el texto haga saltos de línea */
-        border: none; /* Quitar el borde de animación en mobile */
+        white-space: nowrap; /* Mantener la animación de tipeo */
+        overflow: hidden; /* Ocultar el texto que se desborda */
+        border-right: 0.15em solid orange; /* Mantener el borde para la animación de tipeo */
+        animation: typing 3.5s steps(40, end), blink-caret 0.90s step-end infinite; /* Mantener la animación */
     }
 
-    .hero .text p{
+    .hero .text p {
         font-size: 13pt;
     }
 
@@ -77,7 +79,8 @@
     .card {
         margin-bottom: 1rem; /* Añadir espacio entre tarjetas */
     }
-    .premises2 picture img{
+
+    .premises2 picture img {
         width: 100%;
     }
 

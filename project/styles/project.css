@@ -89,7 +89,7 @@ footer p{
     width: 100%;
     height: auto;
     filter: blur(1px); 
-    height: 110vh; 
+    height: 110vh; /* Cambia este valor según lo que necesites */
 
 }
 
