@@ -2,7 +2,14 @@
     --primary-color: #0466c8;
     --secondary-color: #62b6cb;
     --accent-color: #fdc500;
-    --footer-color: black;
+    --footer-color: #212121;
+    --input-bg-color: #f0f0f0;
+    --input-border-color: #ddd;
+    --input-focus-border-color: var(--primary-color);
+    --button-bg-color: var(--primary-color);
+    --button-hover-bg-color: var(--accent-color);
+    --button-text-color: #fff;
+    --button-hover-text-color: #000;
 }
 
 body {
@@ -15,22 +22,25 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: var(--footer-color);
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0.5rem 0;
 }
 
 header h1 {
     margin: 0;
     text-align: center;
     padding: 0.8rem;
+    color: var(--accent-color);
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -42,84 +52,197 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
-footer{
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+footer {
     background-color: var(--footer-color);
-    margin: 0px;
     padding: 0.5rem;
     text-align: center;
     color: white;
 }
 
-.hero{
+.hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5rem;
+    align-items: center;
+    padding: 2rem;
 }
-.text h2{
-    font-size: 30pt;
-    max-width: 400px;
+
+.hero img {
+    width: 100%;
+    border-radius: 10px;
 }
-.text{
+
+.text {
     margin: 2rem;
     text-align: center;
-    max-width: 400px;
 }
-button{
-    margin:1.5rem  1rem;
-    background-color: black;
-    color: white;
+
+.text h2 {
+    font-size: 30pt;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret 0.90s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 10%; }
+    to { width: 80%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+button {
+    margin: 1.5rem 1rem;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
     border-radius: 5px;
     padding: 0.7rem;
     border: none;
     cursor: pointer;
 }
-button:hover{
-    background-color: white;
-    color: black;
+
+button:hover {
+    background-color: var(--button-hover-text-color); 
+    color: var(--button-text-color);
     border: 1px solid black;
     transition: 0.5s;
 }
-.purpose h2{
-    text-align: center;
 
-}
-.purpose{
+.purpose {
     text-align: center;
     margin: 4rem;
-    border: 2px solid black;
 }
-.experience{
+
+.purpose h2 {
+    font-size: 24pt;
+}
+
+.experience {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     margin: 2rem;
 }
-.experience img{
+
+.experience img {
+    width: 100%;
     border-radius: 10px;
     cursor: pointer;
 }
-.experience img:hover{
+
+.experience img:hover {
     opacity: 0.8;
     transition: 0.5s;
 }
-.premises{
+
+.premises {
     margin: 2rem;
     text-align: center;
 }
-.premises h2{
-    text-align: center;
+
+.premises h2 {
     font-size: 20pt;
-    margin: 2rem;
+    margin: 2rem 0;
 }
-.premises2{
+
+.premises2 {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
-form{
+
+.subscribe {
+    margin: 3rem;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+fieldset {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    background-color: var(--input-bg-color);
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--input-focus-border-color);
+    outline: none;
+}
+
+.contact-methods {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 3rem;
+    gap: 1rem;
+    margin-top: 1rem;
 }
-fieldset{
+
+.contact-methods label {
+    display: flex;
+    align-items: center;
+}
+
+.contact-methods input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.contact {
+    margin: 1rem;
     text-align: center;
+}
+
+.contact textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid var(--input-border-color);
+}
+
+.contact button {
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .experience,
+    .premises2 {
+        grid-template-columns: 1fr;
+    }
 }
