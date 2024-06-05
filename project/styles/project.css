@@ -3,13 +3,6 @@
     --secondary-color: #62b6cb;
     --accent-color: #fdc500;
     --footer-color: #212121;
-    --input-bg-color: #f0f0f0;
-    --input-border-color: #ddd;
-    --input-focus-border-color: var(--primary-color);
-    --button-bg-color: var(--primary-color);
-    --button-hover-bg-color: var(--accent-color);
-    --button-text-color: #fff;
-    --button-hover-text-color: #000;
 }
 
 body {
@@ -102,8 +95,8 @@ footer {
 
 button {
     margin: 1.5rem 1rem;
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
+    background-color: var(--footer-color);
+    color: white;
     border-radius: 5px;
     padding: 0.7rem;
     border: none;
@@ -111,8 +104,8 @@ button {
 }
 
 button:hover {
-    background-color: var(--button-hover-text-color); 
-    color: var(--button-text-color);
+    background-color: white;
+    color: black;
     border: 1px solid black;
     transition: 0.5s;
 }
@@ -177,31 +170,6 @@ fieldset {
     padding: 1rem;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
-    background-color: #f9f9f9;
-}
-
-label {
-    display: block;
-    margin: 0.5rem 0;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 0.7rem;
-    margin: 0.5rem 0;
-    border: 1px solid var(--input-border-color);
-    border-radius: 5px;
-    background-color: var(--input-bg-color);
-    transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border-color: var(--input-focus-border-color);
-    outline: none;
 }
 
 .contact-methods {
@@ -209,15 +177,6 @@ textarea:focus {
     justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
-}
-
-.contact-methods label {
-    display: flex;
-    align-items: center;
-}
-
-.contact-methods input[type="checkbox"] {
-    margin-right: 0.5rem;
 }
 
 .contact {
@@ -229,7 +188,7 @@ textarea:focus {
     width: 100%;
     padding: 1rem;
     border-radius: 5px;
-    border: 1px solid var(--input-border-color);
+    border: 1px solid var(--primary-color);
 }
 
 .contact button {
@@ -241,8 +200,7 @@ textarea:focus {
         grid-template-columns: 1fr;
     }
 
-    .experience,
-    .premises2 {
+    .experience, .premises2 {
         grid-template-columns: 1fr;
     }
 }

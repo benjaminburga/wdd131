@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Live Fit Wellness - Your peace through exercise">
     <meta name="author" content="Benjamin Burga">
     <link rel="stylesheet" href="styles/project.css">
-    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/project-mobile.css">
     <script src="scripts/project.js" defer></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <title>Project</title>
+    <title>Live Fit Wellness</title>
 </head>
 <body>
     <header>
@@ -20,8 +19,8 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="">Contact us</a></li>
-                <li><a href="">More</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">More</a></li>
             </ul>
         </nav>
     </header>
@@ -30,32 +29,33 @@
         <section class="hero">
             <div class="text">
                 <h2>Find your peace with exercises</h2>
-                <p> Discover how to improve your health and well-being with our exercise tips. From workout routines to nutritional advice, we're here to help you achieve your fitness goals."</p>
-                <button id="">Start Today</button>
-                <button id="submit">Subscribe</button>
+                <p> Discover how to improve your health and well-being with our exercise tips. From workout routines to nutritional advice, we're here to help you achieve your fitness goals.".</p>
+                <button id="start-today">Start Today</button>
+                <button id="subscribe">Subscribe</button>
             </div>
             <picture>
-                <img src="images/image_hero.jpg" alt="image_hero">
+                <img src="images/image_hero.jpg" alt="Hero image showing fitness" width="100%">
             </picture>
         </section>
         <section class="purpose"> 
-            <h2>Our purpose</h2>
+            <h2>Our Purpose</h2>
             <div class="experience">
                 <picture>
-                    <img src="images/image1.jpg" alt="purpose">
-                    <p>Discover the benefits of a healthy lifestyle. Learn how regular exercise can improve your mood, increase energy levels, and reduce the risk of chronic diseases. Start your fitness journey today!</p>
+                    <img src="images/image1.jpg" alt="Experience image 1" width="100%">
+                    <p> <p>Explore various exercise options tailored to your preferences and fitness level. Whether you prefer cardio workouts, strength training, or yoga, we have tips and recommendations to help you stay active and healthy.</p>
+                    </p>
                 </picture>
                 <picture>
-                    <img src="images/image2.jpg" alt="purpose2">
-                    <p>Explore various exercise options tailored to your preferences and fitness level. Whether you prefer cardio workouts, strength training, or yoga, we have tips and recommendations to help you stay active and healthy.</p>
+                    <img src="images/image2.jpg" alt="Experience image 2" width="100%">
+                    <p>Discover the benefits of a healthy lifestyle. Learn how regular exercise can improve your mood, increase energy levels, and reduce the risk of chronic diseases. Start your fitness journey today!</p>
                 </picture>
             </div>
         </section>
         <section class="premises">
-            <h2>Our premises</h2>
+            <h2>Our Premises</h2>
             <div class="premises2">
                 <picture>
-                    <img src="images/image3.jpg" alt="">
+                    <img src="images/image3.jpg" alt="Premises image" width="100%">
                 </picture>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aliquid et, voluptas cumque adipisci omnis, aut ipsum porro magnam nostrum magni, quam recusandae eum laudantium ut id nisi? Vero, laudantium!</p>
             </div>
@@ -65,37 +65,32 @@
                 <fieldset>
                     <legend>Subscribe</legend>
                     <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Your name">
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="example@gmail.com">
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
                     <div class="contact-methods">
-                        <label for="email-contact">
-                            <input type="checkbox" id="email-contact" name="contact-method">
-                            Email
-                        </label>
-                        <label for="sms-contact">
-                            <input type="checkbox" id="sms-contact" name="contact-method">
-                            SMS
-                        </label>
-                        <label for="call-contact">
-                            <input type="checkbox" id="call-contact" name="contact-method">
-                            Call
-                        </label>
+                        <input type="checkbox" id="email-contact" name="contact-method">
+                        <label for="email-contact">Email</label>
+                        <input type="checkbox" id="sms-contact" name="contact-method">
+                        <label for="sms-contact">SMS</label>
+                        <input type="checkbox" id="call-contact" name="contact-method">
+                        <label for="call-contact">Call</label>
                     </div>
-                    <button id="submit">Submit</button>
+                    <button type="submit" id="submit">Submit</button>
                 </fieldset>
             </form>
             <div class="contact">
                 <h2>Contact Us</h2>
                 <label for="message">Message</label>
-                <textarea id="message" name="message" cols="30" rows="5" placeholder="Your message"></textarea>
+                <textarea id="message" name="message" cols="30" rows="5"></textarea>
                 <button type="submit">Send Message</button>
             </div>
         </div>
     </main>
     <footer>
-        <p> © <span id="current-year"></span> | ✌️Benjamin Burga - Peru</p>
+        <p>© <span id="current-year"></span> | ✌️ Benjamin Burga - Peru</p>
         <p><span id="last-modified"></span></p>
     </footer>
+    
 </body>
 </html>
