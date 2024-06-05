@@ -1,12 +1,48 @@
-/* Estilos para dispositivos móviles */
+/* Estilos CSS específicos para dispositivos móviles */
 @media (max-width: 768px) {
-    .contact-methods {
-        display: flex;
-        flex-direction: column; /* Organizar verticalmente */
-        align-items: flex-start; /* Alinear los elementos a la izquierda */
-        gap: 0.5rem; /* Espacio entre los elementos */
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 4.5rem;
+        left: 0;
+        width: 100%;
+        background-color: var(--footer-color);
+        padding: 1rem;
+        z-index: 999;
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-100%);
     }
 
+    header {
+        margin-right: 0px; 
+    }
+    .text h2 {
+        font-size: 1rem; /* Tamaño de fuente más pequeño */
+        max-width: 300px; /* Anchura máxima del texto */
+        overflow-wrap: break-word; /* Dividir palabras automáticamente */
+
+
+        overflow: hidden;
+        border-right: 0.15em solid orange;
+        white-space: nowrap;
+        animation: typing 3.5s steps(40, end), blink-caret 0.90s step-end infinite;
+        
+        
+    }
+    nav.open ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        padding: 0;
+    }
+
+    /* Estilos para cada elemento del menú */
+    nav.open ul li {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    /* Cambiar posición y ajustar tamaño del menú */
     header {
         position: fixed;
         top: 0;
@@ -21,107 +57,9 @@
         padding: 0.5rem 1rem; 
     }
 
+    /* Ajustar tamaño y posición del título */
     header h1 {
         margin-left: 1rem;
         font-size: 1.5rem; 
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        top: 4.5rem;
-        left: 0;
-        width: 100%;
-        background-color: var(--footer-color);
-        padding: 1rem;
-        z-index: 999;
-        transition: transform 0.3s ease-in-out;
-        transform: translateY(-100%);
-    }
-
-    nav ul {
-        margin-top: 2rem;
-        padding: 0;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 1rem;
-    }
-
-    nav.open {
-        transform: translateY(0);
-    }
-
-    .menu-icon {
-        display: block;
-        margin-right: 1rem;
-        cursor: pointer;
-    }
-
-    .menu-icon i {
-        font-size: 1.5rem;
-    }
-
-    .hero {
-        padding: 2rem 1rem;
-        text-align: center; 
-    }
-
-    .text h2 {
-        font-size: 1.8rem; 
-    }
-
-    .text p {
-        font-size: 1.2rem; 
-        margin-bottom: 1.5rem; 
-    }
-
-    .text button {
-        margin: 1.5rem auto; 
-        display: block; 
-    }
-
-    .purpose {
-        margin: 2rem 0; 
-    }
-
-    .purpose h2 {
-        font-size: 1.5rem; 
-    }
-
-    .experience, .premises2 {
-        grid-template-columns: 1fr;
-    }
-
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: var(--footer-color);
-        color: white;
-        padding: 0.5rem 1rem;
-        text-align: center;
-        z-index: 1000;
-    }
-
-    footer p {
-        margin: 0;
-    }
-
-    /* Mostrar el menú de navegación al hacer clic en el icono */
-    nav.open {
-        transform: translateY(0);
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin-bottom: 1rem;
     }
 }

@@ -69,7 +69,6 @@ footer {
 }
 footer p{
     font-family:cursive;
-
 }
 
 .hero {
@@ -79,9 +78,6 @@ footer p{
     align-items: center;
     gap: 0.5rem;
 }
-
-
-
 .hero picture {
     position: relative;
     display: block;
@@ -92,10 +88,9 @@ footer p{
     width: 100%;
     height: auto;
     filter: blur(1px); 
-    height: 110vh; /* Cambia este valor según lo que necesites */
+    height: 110vh; 
 
 }
-
 
 .text {
     position: absolute;
