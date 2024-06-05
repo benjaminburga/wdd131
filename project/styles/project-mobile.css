@@ -1,65 +1,78 @@
-/* Estilos CSS específicos para dispositivos móviles */
+/* Mobile Styles */
 @media (max-width: 768px) {
-    nav ul {
-        display: none;
-        position: absolute;
-        top: 4.5rem;
-        left: 0;
-        width: 100%;
-        background-color: var(--footer-color);
-        padding: 1rem;
-        z-index: 999;
-        transition: transform 0.3s ease-in-out;
-        transform: translateY(-100%);
+    *{
+        overflow-x: hidden;
     }
-
     header {
-        margin-right: 0px; 
-    }
-    .text h2 {
-        font-size: 1rem; /* Tamaño de fuente más pequeño */
-        max-width: 300px; /* Anchura máxima del texto */
-        overflow-wrap: break-word; /* Dividir palabras automáticamente */
-
-
-        overflow: hidden;
-        border-right: 0.15em solid orange;
-        white-space: nowrap;
-        animation: typing 3.5s steps(40, end), blink-caret 0.90s step-end infinite;
-        
-        
-    }
-    nav.open ul {
-        display: flex;
-        flex-direction: column;
-        margin-top: 2rem;
-        padding: 0;
-    }
-
-    /* Estilos para cada elemento del menú */
-    nav.open ul li {
-        display: block;
-        margin-bottom: 1rem;
-    }
-
-    /* Cambiar posición y ajustar tamaño del menú */
-    header {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: var(--footer-color);
-        color: white;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        z-index: 1000; 
-        padding: 0.5rem 1rem; 
+        padding: 1rem;
     }
 
-    /* Ajustar tamaño y posición del título */
-    header h1 {
-        margin-left: 1rem;
-        font-size: 1.5rem; 
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--footer-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 1rem;
+        transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        background-color: var(--primary-color);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hero {
+        height: auto; /* Ajustar altura de la imagen */
+    }
+
+    .hero img {
+        height: 50vh; /* Ajustar altura de la imagen en mobile */
+    }
+
+
+    .text h2 {
+        font-size: 10pt; /* Reducir tamaño del texto */
+        max-width: 300px; /* Asegurarse de que el texto no se salga del contenedor */
+        white-space: normal; /* Permitir que el texto haga saltos de línea */
+        overflow: visible; /* Asegurarse de que el texto no se corte */
+        border: none; /* Quitar el borde de animación en mobile */
+        animation: none; /* Quitar la animación en mobile */
+    }
+
+    .text p {
+        font-size: 1rem; /* Ajustar el tamaño del párrafo */
+    }
+    
+    .experience {
+        flex-direction: column; /* Mostrar las tarjetas en columna */
+    }
+
+    .card {
+        margin-bottom: 1rem; /* Añadir espacio entre tarjetas */
     }
 }
