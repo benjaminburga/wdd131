@@ -1,9 +1,4 @@
-/* Reset CSS */
-/* {
-    margin: 0px;
-} */
 
-/* Variables */
 :root {
     --primary-color: #0466c8;
     --secondary-color: #62b6cb;
@@ -11,7 +6,6 @@
     --footer-color: #212121;
 }
 
-/* Global Styles */
 body {
     font-family: "Lato", sans-serif;
     background-color: #ffffff;
@@ -29,15 +23,22 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.997);
-    z-index: 10; /* Asegura que el encabezado esté por encima de otros elementos */
+    box-shadow: 2px 10px 500px rgba(3, 3, 3, 0.997);
+    z-index: 10; 
 }
 
-header h1 , .peace {
+header h1 {
     margin: 0;
     text-align: center;
     padding: 0.8rem;
     color: var(--accent-color);
+    font-size: 20pt;
+}
+.peace{
+    font-weight: 900;
+    background: linear-gradient(to right, #f9e006, #fd750e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav ul {
@@ -66,8 +67,11 @@ footer {
     text-align: center;
     color: white;
 }
+footer p{
+    font-family:cursive;
 
-/* Hero Section */
+}
+
 .hero {
     position: relative;
     display: grid;
@@ -75,6 +79,8 @@ footer {
     align-items: center;
     gap: 0.5rem;
 }
+
+
 
 .hero picture {
     position: relative;
@@ -85,7 +91,11 @@ footer {
 .hero img {
     width: 100%;
     height: auto;
+    filter: blur(1px); 
+    height: 110vh; /* Cambia este valor según lo que necesites */
+
 }
+
 
 .text {
     position: absolute;
@@ -93,16 +103,22 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff;
     z-index: 1;
-}
+    color: white;
+    /*
+    background: linear-gradient(to right, #ecf3fa, #5d3f29);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+} 
 
 .text h2 {
-    font-size: 30pt;
+    font-size: 50pt;
     overflow: hidden;
     border-right: 0.15em solid orange;
     white-space: nowrap;
     animation: typing 3.5s steps(40, end), blink-caret 0.90s step-end infinite;
+ 
 }
 
 @keyframes typing {
@@ -117,63 +133,83 @@ footer {
 
 .text p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;   
 }
 
-.text button {
+.text button , form button , .contact button{
     margin: 1.5rem 1rem;
     background-color: var(--footer-color);
     color: white;
     border-radius: 5px;
-    padding: 0.7rem;
+    padding: 1rem;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-weight: 700;
+    width: 8rem;
+
 }
 
 .text button:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
+    background-color: black;
+    color: var(--accent-color);
+    border: none;
+    transition: 1s;
 }
 
-/* Purpose Section */
 .purpose {
     text-align: center;
-    margin: 4rem;
+    margin: 6rem;
 }
 
 .purpose h2 {
     font-size: 24pt;
+    background: linear-gradient(to right, #331717, #ffaa00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+strong{
+    font-size: 15pt;
+}
 .experience {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 2rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Espacio entre las tarjetas */
 }
 
-.experience img {
-    width: 100%;
-    border-radius: 10px;
+.card {
+    flex: 1; /* Las tarjetas ocuparán el mismo espacio */
+    background-color: #ffffff; /* Color de fondo de las tarjetas */
+    padding: 20px; /* Espacio interno de las tarjetas */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
     cursor: pointer;
+
 }
 
-.experience img:hover {
-    opacity: 0.8;
-    transition: 0.5s;
+.card img {
+    width: 100%;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    
 }
 
-/* Premises Section */
+.card p {
+    margin-top: 10px; /* Espacio superior para el texto */
+}
+
 .premises {
-    margin: 2rem;
     text-align: center;
+    background-color: var(--footer-color);
+    padding: 2rem;
+    
 }
+
 
 .premises h2 {
-    font-size: 20pt;
+    font-size: 30pt;
     margin: 2rem 0;
+    color: var(--accent-color);
 }
 
 .premises2 {
@@ -181,25 +217,59 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
+.premises2 p {
+    background: linear-gradient(to right, #887e7e, #ffaa00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20pt;
+}
+.premises2 img{
+    width: 50%;
+}
 
-/* Subscribe Section */
 .subscribe {
     margin: 3rem;
     text-align: center;
 }
 
 form {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     margin: 0 auto;
-    max-width: 400px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column; /* Organizar verticalmente */
+    align-items: flex-start; /* Alinear los elementos a la izquierda */
+    gap: 0.5rem; /* Espacio entre los elementos */
+}
+
+form button:hover, .contact button:hover{
+    background-color: var(--accent-color);
+    color: var(--footer-color);
+    transition: 0.6s;
+}
+
+input{
+    padding: 0.4rem;
+    border: none;
+    border-bottom: 1px solid black;
+    outline-color: var(--accent-color);
 }
 
 fieldset {
     text-align: center;
-    padding: 1rem;
+    padding: 3rem;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
+    border: 2px solid var(--footer-color);
+}
+legend{
+    font-weight: 700;
+    font-size: 20pt;
 }
 
 .contact-methods {
@@ -210,28 +280,15 @@ fieldset {
 }
 
 .contact {
-    margin: 1rem;
+    margin: 2rem;
     text-align: center;
+
 }
 
 .contact textarea {
     width: 100%;
     padding: 1rem;
     border-radius: 5px;
-    border: 1px solid var(--primary-color);
+    outline-color: var(--accent-color);
 }
 
-.contact button {
-    margin-top: 1rem;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .hero {
-        padding: 2rem 1rem;
-    }
-
-    .experience, .premises2 {
-        grid-template-columns: 1fr;
-    }
-}
