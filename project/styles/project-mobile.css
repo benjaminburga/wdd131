@@ -1,48 +1,38 @@
+/* Mobile Navigation */
 @media (max-width: 768px) {
-    .hero {
-        grid-template-columns: 1fr;
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        z-index: 1000;
+        padding: 0.5rem 0;
     }
 
-    .experience,
-    .premises2 {
-        grid-template-columns: 1fr;
-    }
-
-    header {
-        flex-direction: column;
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     nav ul li {
-        display: block;
-        margin: 0.5rem 0;
+        margin: 0 1rem;
     }
 
-    .text h2 {
-        font-size: 24pt;
+    nav ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
     }
 
-    .text {
-        margin: 1rem;
-    }
-
-    .subscribe {
-        margin: 2rem 1rem;
-    }
-
-    form {
-        margin: 1rem auto;
-        max-width: 90%;
-    }
-
-    .contact {
-        margin: 1rem;
-    }
-
-    .contact textarea {
-        width: 100%;
-    }
-
-    footer {
-        padding: 1rem;
+    nav ul li a:hover {
+        background-color: var(--secondary-color);
     }
 }
