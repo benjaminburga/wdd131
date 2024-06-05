@@ -1,8 +1,9 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
-    *{
+    * {
         overflow-x: hidden;
     }
+
     header {
         display: flex;
         justify-content: space-between;
@@ -50,29 +51,38 @@
         height: auto; /* Ajustar altura de la imagen */
     }
 
-    .hero img {
-        height: 50vh; /* Ajustar altura de la imagen en mobile */
+    .hero picture img {
+        width: 100%; /* Ajustar el ancho de la imagen en mobile */
+        height: 85vh; /* Ajustar altura de la imagen en mobile */
+    }
+    .hero .text h2 {
+        font-size: 40pt; /* Reducir tamaño del texto */
+        max-width: 100%; /* Asegurarse de que el texto no se salga del contenedor */
+        white-space: inherit; /* Permitir que el texto haga saltos de línea */
+        border: none; /* Quitar el borde de animación en mobile */
     }
 
-
-    .text h2 {
-        font-size: 10pt; /* Reducir tamaño del texto */
-        max-width: 300px; /* Asegurarse de que el texto no se salga del contenedor */
-        white-space: normal; /* Permitir que el texto haga saltos de línea */
-        overflow: visible; /* Asegurarse de que el texto no se corte */
-        border: none; /* Quitar el borde de animación en mobile */
-        animation: none; /* Quitar la animación en mobile */
+    .hero .text p{
+        font-size: 13pt;
     }
 
     .text p {
         font-size: 1rem; /* Ajustar el tamaño del párrafo */
     }
-    
+
     .experience {
         flex-direction: column; /* Mostrar las tarjetas en columna */
     }
 
     .card {
         margin-bottom: 1rem; /* Añadir espacio entre tarjetas */
+    }
+    .premises2 picture img{
+        width: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
     }
 }
