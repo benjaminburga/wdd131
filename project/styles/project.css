@@ -300,3 +300,7 @@ legend{
     border-radius: 5px;
     outline-color: var(--accent-color);
 }
+#contact-form{
+    display: flex;
+    flex-direction: column;
+}
