@@ -1,4 +1,3 @@
-
 :root {
     --primary-color: #0466c8;
     --secondary-color: #62b6cb;
@@ -160,6 +159,7 @@ footer p{
     transition: 1s;
     transform: translateY(-3px);
     color: white;
+    background-color: #e59a03;
 }
 
 .purpose {
@@ -318,4 +318,3 @@ legend{
     border-radius: 5px;
     outline-color: var(--accent-color);
 }
-

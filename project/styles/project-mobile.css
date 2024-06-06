@@ -1,8 +1,17 @@
-/* Mobile Styles */
 @media (max-width: 768px) {
-    /* Resto del CSS para dispositivos móviles */
+    
 
-   
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
     nav ul {
         display: none;
         flex-direction: column;
@@ -33,7 +42,6 @@
     nav ul li a:hover {
         background-color: var(--primary-color);
     }
-}
 
     nav ul.show {
         display: flex;
@@ -77,3 +85,4 @@
         display: flex;
         flex-direction: column;
     }
+}
