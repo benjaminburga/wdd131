@@ -31,7 +31,7 @@
             <div class="text">
                 <h2>Find your <span class="peace">peace</span> with exercises</h2>
                 <p>Discover how to improve your health and well-being with our exercise tips. From workout routines to nutritional advice, we're here to help you achieve your fitness goals.</p>
-                <button id="start-today">Start Today</button>
+                <button id="start-today"> <a href="#contact">Start Today</a></button>
                 <button  ><a href="#subscribe">Subscribe</a></button>
             </div>
             <picture>
@@ -90,9 +90,12 @@
             </form>
             <div id="contact" class="contact">
                 <h2>Contact Us</h2>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" cols="30" rows="5"></textarea>
-                <button type="submit">Send Message</button>
+                <form id="contact-form">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" cols="30" rows="5"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div id="contact-message"></div>
             </div>
         </div>
     </main>
