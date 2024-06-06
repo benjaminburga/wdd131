@@ -46,6 +46,9 @@
     nav ul.show {
         display: flex;
     }
+    .hero{
+        height: 100vh;
+    }
 
     .hero picture img {
         width: 100%; 
@@ -53,8 +56,8 @@
 
 
     .hero .text h2 {
-        font-size: 25pt; 
-        max-width: 50%; 
+        font-size: 23pt; 
+        max-width: 100%; 
         white-space: nowrap; 
         overflow: hidden; 
         border-right: 0.15em solid orange; 
@@ -67,6 +70,7 @@
 
     .text p {
         font-size: 1rem;
+        max-width: 400px;
     }
 
     .experience {
