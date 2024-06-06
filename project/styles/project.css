@@ -91,7 +91,7 @@ footer p{
     width: 100%;
     height: auto;
     filter: blur(1px); 
-    height: 110vh; /* Cambia este valor según lo que necesites */
+    height: 110vh; 
 
 }
 
@@ -180,27 +180,27 @@ strong{
 .experience {
     display: flex;
     justify-content: space-around;
-    gap: 20px; /* Espacio entre las tarjetas */
+    gap: 20px; 
 }
 
 .card {
-    flex: 1; /* Las tarjetas ocuparán el mismo espacio */
-    background-color: #ffffff; /* Color de fondo de las tarjetas */
-    padding: 20px; /* Espacio interno de las tarjetas */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    flex: 1; 
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 
 }
 
 .card img {
     width: 100%;
-    border-radius: 10px; /* Bordes redondeados para la imagen */
+    border-radius: 10px; 
     
 }
 
 .card p {
-    margin-top: 10px; /* Espacio superior para el texto */
+    margin-top: 10px; 
 }
 
 .premises {
@@ -232,17 +232,7 @@ strong{
     width: 50%;
 }
 
-.premises button{
-    background: linear-gradient(to right, #887e7e, #ffaa00);
-    border: none;
-    padding: 0.7rem;
-    width: 7rem;
-    border-radius: 5px;
-    position: relative;
-    right: -15rem;
-    top: 10rem;
-    cursor: pointer;
-}
+
 .premises button:hover{
     background: linear-gradient(to right, #e1bc18, #b7841f);
     transform: translateY(-3px);
@@ -266,9 +256,9 @@ form {
 
 .contact-methods {
     display: flex;
-    flex-direction: column; /* Organizar verticalmente */
-    align-items: flex-start; /* Alinear los elementos a la izquierda */
-    gap: 0.5rem; /* Espacio entre los elementos */
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 0.5rem;
 }
 
 form button:hover, .contact button:hover{
