@@ -72,7 +72,7 @@ footer p{
 
 }
 .menu-icon{
-    color: var(--footer-color);
+
 }
 
 .hero {
@@ -104,11 +104,6 @@ footer p{
     text-align: center;
     z-index: 1;
     color: white;
-    /*
-    background: linear-gradient(to right, #ecf3fa, #5d3f29);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    */
 } 
 
 .text h2 {
@@ -149,22 +144,22 @@ footer p{
 
 }
 .text button{
-    background: linear-gradient(to right, #9f942e, #fd750e);
-    transition: 1s;
     font-weight: 700;
     border-radius: 5px;
-    border: none;
+    border: 2px solid #e59a03;
     width: 7rem;
     padding: 0.7rem;
     cursor: pointer;
     margin: 3rem;
+    background: linear-gradient(to right, #f9e006, #fd750e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .text button:hover {
-    background: linear-gradient(to right, #e1bc18, #b7841f);
-    transition: 0.3s;
-    transform: translateY(-2px);
-
+    transition: 1s;
+    transform: translateY(-3px);
+    color: white;
 }
 
 .purpose {
