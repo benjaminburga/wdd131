@@ -7,8 +7,6 @@
     <meta name="author" content="Benjamin Burga">
     <link rel="stylesheet" href="styles/project-mobile.css">
     <link rel="stylesheet" href="styles/project.css">
-
-
     <script src="scripts/project.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,31 +16,29 @@
 <body>
     <header>
         <h1>Live Fit Wellness</h1>
+        <div class="menu-icon">&#9776;</div>
         <nav>
-            <div class="menu-icon">
-                <i class="fas fa-bars"></i>
-            </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">More</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
         <section class="hero">
-                <div class="text">
-                    <h2>Find your <span class="peace">peace</span> with exercises</h2>
-                    <p>Discover how to improve your health and well-being with our exercise tips. From workout routines to nutritional advice, we're here to help you achieve your fitness goals.</p>
-                    <button id="start-today">Start Today</button>
-                    <button id="subscribe">Subscribe</button>
-                </div>
-                <picture>
+            <div class="text">
+                <h2>Find your <span class="peace">peace</span> with exercises</h2>
+                <p>Discover how to improve your health and well-being with our exercise tips. From workout routines to nutritional advice, we're here to help you achieve your fitness goals.</p>
+                <button id="start-today">Start Today</button>
+                <button id="subscribe">Subscribe</button>
+            </div>
+            <picture>
                 <img src="images/image_hero.jpg" alt="Hero image showing fitness">
             </picture>
         </section>
-        <section class="purpose"> 
+        <section class="purpose">
             <h2>Our Purpose</h2>
             <div class="experience">
                 <div class="card">
@@ -69,8 +65,7 @@
                 <picture>
                     <img src="images/img9.png" alt="Premises image">
                 </picture>
-                <p>"Building a Healthier Future: Our Fitness Journey"
-                </p>
+                <p>"Building a Healthier Future: Our Fitness Journey"</p>
             </div>
         </section>
         <div class="subscribe">
@@ -82,12 +77,12 @@
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
                     <div class="contact-methods">
-                        <input type="checkbox" id="check" name="contact-method">
-                        <label for="email-contact">Monthly newsletter with fitness tips and healthy recipes.</label>
-                        <input type="checkbox" id="check" name="contact-method">
-                        <label for="sms-contact">Nutrition tips and food recommendations.</label>
-                        <input type="checkbox" id="check" name="contact-method">
-                        <label for="call-contact">Meditation exercises and relaxation techniques.</label>
+                        <input type="checkbox" id="check1" name="contact-method">
+                        <label for="check1">Monthly newsletter with fitness tips and healthy recipes.</label>
+                        <input type="checkbox" id="check2" name="contact-method">
+                        <label for="check2">Nutrition tips and food recommendations.</label>
+                        <input type="checkbox" id="check3" name="contact-method">
+                        <label for="check3">Meditation exercises and relaxation techniques.</label>
                     </div>
                     <button type="submit" id="submit">Submit</button>
                 </fieldset>
@@ -104,6 +99,6 @@
         <p>© <span id="current-year"></span> | ✌️ Benjamin Burga - Peru ✌️</p>
         <p><span id="last-modified"></span></p>
     </footer>
-    
+
 </body>
 </html>

@@ -14,6 +14,7 @@
     .menu-icon {
         display: block;
         cursor: pointer;
+        color: var(--primary-color);
     }
 
     nav ul {
@@ -56,7 +57,7 @@
     }
 
     .hero .text h2 {
-        font-size: 40pt; /* Reducir tamaño del texto */
+        font-size: 25pt; /* Reducir tamaño del texto */
         max-width: 100%; /* Asegurarse de que el texto no se salga del contenedor */
         white-space: nowrap; /* Mantener la animación de tipeo */
         overflow: hidden; /* Ocultar el texto que se desborda */
@@ -65,7 +66,7 @@
     }
 
     .hero .text p {
-        font-size: 13pt;
+        font-size: 11pt;
     }
 
     .text p {
