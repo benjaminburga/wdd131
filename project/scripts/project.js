@@ -18,37 +18,32 @@ document.addEventListener('DOMContentLoaded', () => {
     
     menuLinks.forEach(link => {
         link.addEventListener('click', e => {
-            e.preventDefault(); // Prevent default link behavior
-            const targetId = link.getAttribute('href'); // Get target ID from link
-            const targetElement = document.querySelector(targetId); // Find element with corresponding ID
+            e.preventDefault(); 
+            const targetId = link.getAttribute('href'); 
+            const targetElement = document.querySelector(targetId); 
             if (targetElement) {
-                // Smooth scroll to the position of the element
                 window.scrollTo({
                     top: targetElement.offsetTop,
                     behavior: 'smooth'
                 });
             }
-            navList.classList.remove('show'); // Hide menu after clicking a link
+            navList.classList.remove('show'); 
         });
     });
 
     const subscribeForm = document.querySelector('.subscribe form');
 
     subscribeForm.addEventListener('submit', e => {
-        e.preventDefault(); // Prevent form submission
+        e.preventDefault();
         
         const nameInput = document.getElementById('name');
         const emailInput = document.getElementById('email');
         const checkboxInputs = document.querySelectorAll('.contact-methods input[type="checkbox"]');
         
-        // Check if a name and email are entered, and at least one checkbox is checked
         if (nameInput.value.trim() !== '' && emailInput.value.trim() !== '' && [...checkboxInputs].some(input => input.checked)) {
-            // Show successful registration message
             alert("You have registered successfully!");
-            // Clear form fields
             subscribeForm.reset();
         } else {
-            // Show an error message if information is missing
             alert("Please fill out all fields and select at least one option.");
         }
     });
@@ -56,9 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contact-form');
 
     contactForm.addEventListener('submit', e => {
-        e.preventDefault(); // Prevent form submission
+        e.preventDefault();
         
-        // Show confirmation message
         alert("Thank you for contacting us!");
     });
 });

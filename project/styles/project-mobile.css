@@ -20,8 +20,8 @@
         top: 100%;
         left: 0;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.5); /* Color de fondo transparente */
-        backdrop-filter: blur(7px); /* Aplicar desenfoque */
+        background-color: rgba(0, 0, 0, 0.5); 
+        backdrop-filter: blur(7px); 
     
     }
 
@@ -60,7 +60,7 @@
 
     .hero .text h2 {
         margin-top: 8rem;
-        font-size: 23pt; 
+        font-size: 21pt; 
         max-width: 100%; 
         white-space: nowrap; 
         overflow: hidden; 
@@ -74,7 +74,7 @@
 
     .text p {
         font-size: 1rem;
-        max-width: 400px;
+        max-width: 350px;
     }
 
     .experience {
