@@ -53,7 +53,7 @@
 
     .hero picture img {
         width: 100%; /* Ajustar el ancho de la imagen en mobile */
-        height: 85vh; /* Ajustar altura de la imagen en mobile */
+        height: auto; /* Ajustar altura de la imagen en mobile */
     }
 
     .hero .text h2 {

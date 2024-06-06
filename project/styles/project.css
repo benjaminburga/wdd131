@@ -135,7 +135,7 @@ footer p{
     margin-bottom: 2rem;   
 }
 
-.text button , form button , .contact button{
+ form button , .contact button {
     margin: 1.5rem 1rem;
     background-color: var(--footer-color);
     color: white;
@@ -148,12 +148,23 @@ footer p{
     width: 8rem;
 
 }
+.text button{
+    background: linear-gradient(to right, #9f942e, #fd750e);
+    transition: 1s;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    width: 7rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    margin: 3rem;
+}
 
 .text button:hover {
-    background-color: black;
-    color: var(--accent-color);
-    border: none;
-    transition: 1s;
+    background: linear-gradient(to right, #e1bc18, #b7841f);
+    transition: 0.3s;
+    transform: translateY(-2px);
+
 }
 
 .purpose {
@@ -226,9 +237,28 @@ strong{
     width: 50%;
 }
 
+.premises button{
+    background: linear-gradient(to right, #887e7e, #ffaa00);
+    border: none;
+    padding: 0.7rem;
+    width: 7rem;
+    border-radius: 5px;
+    position: relative;
+    right: -15rem;
+    top: 10rem;
+    cursor: pointer;
+}
+.premises button:hover{
+    background: linear-gradient(to right, #e1bc18, #b7841f);
+    transform: translateY(-3px);
+    transition: 1s;
+    font-weight: 500;
+}
+
 .subscribe {
     margin: 3rem;
     text-align: center;
+    
 }
 
 form {
@@ -269,6 +299,9 @@ fieldset {
 legend{
     font-weight: 700;
     font-size: 20pt;
+    background: linear-gradient(to right, #331717, #e59a03);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .contact-methods {
